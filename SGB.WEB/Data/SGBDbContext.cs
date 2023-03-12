@@ -5,6 +5,10 @@ namespace SGB.WEB.Data
 {
     public class SGBDbContext : DbContext
     {
+        public SGBDbContext(DbContextOptions<SGBDbContext> options)
+            : base(options)
+        {
+        }
         DbSet<Usuario> Usuarios { get; set; }
         DbSet<Emprestimo> Emprestimos { get; set; }  
         DbSet<Livro> Livros { get; set; }   
