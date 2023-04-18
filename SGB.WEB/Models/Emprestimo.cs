@@ -2,6 +2,8 @@
 {
     public class Emprestimo
     {
+        
+        [Key]
         public Livro Livro { get; set; }
         public Usuario Usuario { get; set; }
         public DateTime DataEmprestimo { get; set; }
